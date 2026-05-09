@@ -1,0 +1,13 @@
+{
+  "repo": "growthhackers",
+  "feeds": [
+    {
+      "source": "https://growthhackers.com/articles",
+      "feed_url": "https://growthhackers.com/feed/",
+      "title": "GrowthHackers.com",
+      "saved": 10
+    }
+  ],
+  "fetched": "2026-05-09T20:17:51Z",
+  "post_count": 10
+}
