@@ -2,12 +2,17 @@
   "repo": "growthhackers",
   "feeds": [
     {
-      "source": "https://growthhackers.com/articles",
+      "source": "https://growthhackers.com/feed/",
       "feed_url": "https://growthhackers.com/feed/",
-      "title": "GrowthHackers.com",
-      "saved": 0
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://growthhackers.com/articles",
+      "error": "HTTPError"
     }
   ],
-  "fetched": "2026-05-17T20:20:35Z",
+  "fetched": "2026-06-01T23:35:02Z",
   "post_count": 10
 }
