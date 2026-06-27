@@ -31,7 +31,7 @@ common:
     type: Portal
   - url: https://growthhackers.com/join-gh/
     name: Join GrowthHackers
-    type: SignUp
+    type: Signup
 created: '2026-03-24'
 modified: '2026-03-24'
 specificationVersion: '0.19'
