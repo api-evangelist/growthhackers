@@ -1,0 +1,33 @@
+generated: '2026-08-13'
+method: probed
+source: >-
+  live unauthenticated responses from growthhackers.com and os.growthhackers.com on
+  2026-08-13, plus a search of the growthhackers.com sitemap and Growth OS terms for any
+  published limits documentation
+limit_count: 0
+limits: []
+headers_observed: []
+status_on_exhaustion: null
+note: >-
+  GrowthHackers documents no rate limits, because it documents no API — there is no
+  developer portal, reference or spec anywhere on the estate to publish limits in. On the
+  wire, no X-RateLimit-*, RateLimit-* or Retry-After header appeared on any observed
+  response from any GrowthHackers host. The only machine-readable surface that answers
+  publicly is the stock WordPress core REST API at growthhackers.com/wp-json/ (HTTP 200,
+  behind Cloudflare + LiteSpeed); it exposes only WordPress's own CORS headers
+  (access-control-expose-headers: X-WP-Total, X-WP-TotalPages, Link) and no limit
+  signalling. The Growth OS terms of service reserve "our approved APIs" as the sanctioned
+  automation path but state no quota, window or throttle. An honest zero: checked on the
+  wire and in every published document, found nothing.
+evidence:
+  - url: https://growthhackers.com/wp-json/
+    status: 200
+    note: >-
+      WordPress core REST index; response headers carry cf-ray, x-turbo-charged-by and
+      WP CORS headers — no rate-limit headers, no Retry-After
+  - url: https://os.growthhackers.com/
+    status: 200
+    note: Growth OS SPA shell; HSTS present, no rate-limit headers
+  - url: https://growthhackers.com/growthos-terms-of-service/
+    status: 200
+    note: references "our approved APIs" but publishes no limits, quotas or throttles

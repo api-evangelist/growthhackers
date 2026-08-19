@@ -1,0 +1,50 @@
+generated: '2026-08-13'
+method: searched
+source: https://growthhackers.com/pricing/
+plan_count: 0
+plans: []
+note: >-
+  GrowthHackers publishes no API plans, because it publishes no API. There is also no
+  current product pricing page for Growth OS or for community membership. The only
+  pricing surface on the site is https://growthhackers.com/pricing/ (HTTP 200), which is
+  a WordPress custom-post-type ARCHIVE titled "Archives: Pricing tables" — a leftover
+  index of six standalone pricing-table components from the 2022 site: Basic "$96 per
+  year", Basic "$99 per year", Agency "$119 per year", Agency "$135 per year", Advanced
+  "$199 per year", Advanced "$199 per year". Each tier name appears twice at different
+  prices, none carries a feature list, none names a product, and the whole set is stale —
+  pricing-sitemap.xml reports lastmod 2022-04-15. Because those figures cannot tell a
+  buyer what is on sale today, they are recorded here verbatim as an observation rather
+  than as plans, plan_count stays 0, and NO type Pricing pointer is wired into apis.yml.
+  The live commercial motions are an invite/application form for the community
+  (https://growthhackers.com/join-gh/) and contact-led services and sponsorship pages.
+observed_legacy_pricing_archive:
+  url: https://growthhackers.com/pricing/
+  status: 200
+  page_title: 'Archives: Pricing tables'
+  sitemap_lastmod: '2022-04-15'
+  entries:
+    - name: Basic
+      price_text: Billed as $96 per year
+    - name: Basic
+      price_text: Billed as $99 per year
+    - name: Agency
+      price_text: Billed as $119 per year
+    - name: Agency
+      price_text: Billed as $135 per year
+    - name: Advanced
+      price_text: Billed as $199 per year
+    - name: Advanced
+      price_text: Billed as $199 per year
+evidence:
+  - url: https://growthhackers.com/pricing/
+    status: 200
+    note: legacy WordPress pricing-table archive, six duplicate-named tiers, no features
+  - url: https://growthhackers.com/pricing-sitemap.xml
+    status: 200
+    note: six pricing entries, lastmod 2022-04-15
+  - url: https://growthhackers.com/join-gh/
+    status: 200
+    note: community application form; "Registration Received", no price shown
+  - url: https://growthhackers.com/growthos
+    status: 200
+    note: Growth OS product page — no pricing, no signup, no API

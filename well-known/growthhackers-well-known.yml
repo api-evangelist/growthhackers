@@ -1,0 +1,90 @@
+generated: '2026-08-13'
+method: probed
+source: >-
+  live probes of /.well-known/ on every GrowthHackers host reachable from public DNS,
+  2026-08-13
+note: >-
+  Every probe missed. growthhackers.com is WordPress and returns a themed 404 HTML page
+  for every /.well-known/ path. community.growthhackers.com and os.growthhackers.com are
+  single-page applications: community.growthhackers.com answers HTTP 200 with the same
+  2,860-byte HTML shell for EVERY /.well-known/ path — the SPA catch-all false positive,
+  recorded here as a miss, not a hit — while os.growthhackers.com is configured to return
+  a real text/plain 404 ("Not found") for unknown non-route paths. api.growthhackers.com
+  is a dangling DNS record: Cloudflare answers HTTP 403 error 1000 "DNS points to
+  prohibited IP" for the host root and every path beneath it. No WellKnown or SecurityTxt
+  pointer is emitted in apis.yml, because no path returned a real document.
+hosts:
+  - host: https://growthhackers.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: https://community.growthhackers.com
+    note: >-
+      SPA catch-all — every path below answered 200 with the identical 2,860-byte
+      React shell (text/html). Treated as a miss on all paths.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        document: false
+      - path: /.well-known/openid-configuration
+        status: 200
+        document: false
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        document: false
+      - path: /.well-known/oauth-protected-resource
+        status: 200
+        document: false
+      - path: /.well-known/api-catalog
+        status: 200
+        document: false
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        document: false
+      - path: /.well-known/agent-card.json
+        status: 200
+        document: false
+      - path: /.well-known/agent.json
+        status: 200
+        document: false
+  - host: https://os.growthhackers.com
+    note: Growth OS product SPA; returns a real text/plain 404 for unknown non-route paths.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: https://api.growthhackers.com
+    note: >-
+      Not a GrowthHackers origin — Cloudflare error 1000, "DNS points to prohibited IP".
+      The hostname resolves but points at an address Cloudflare refuses to proxy, so
+      there is no API server behind it.
+    documents:
+      - path: /
+        status: 403
+      - path: /.well-known/agent-card.json
+        status: 403
