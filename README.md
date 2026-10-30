@@ -64,6 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-GrowthHackers is a community and platform for growth marketing professionals, founded by Sean Ellis — the person who coined the term "growth hacking." The platform brings together marketers, product managers, and growth practitioners to share strategies, case studies, and experiments focused on scalable, sustainable business growth. Members can access articles, growth studies, webinars, certifications, and a private community to connect with peers and thought leaders across the growth hacking discipline.
+GrowthHackers (Growth Hackers Company, LLC) is a growth-marketing community and software company built around the growth-hacking discipline Sean Ellis named. It runs an invite-only community for founders, heads of growth, marketers and product managers, publishes growth research, case studies, opinion pieces and the State of Growth survey, and hosts webinars, AMAs and a conference. Alongside the community it sells growth and AI marketing services and ships Growth OS, an AI-powered growth and optimization platform for agencies that combines experiment planning, content creation, digital marketing execution and reporting. GrowthHackers publishes no public API, developer portal, SDK or machine-readable specification.
 
-**URL:** [https://growthhackers.com/](https://growthhackers.com/)
+**Areas:** Community · Growth Hacking · Marketing · Growth Marketing · Experimentation · Content Marketing · Event · Education · Agency Services · AI Marketing
+
+## GrowthHackers on APIs.io
+
+Everything profiled for GrowthHackers is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/growthhackers/](https://apis.io/providers/growthhackers/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Growthhackers Domain Security](https://apis.io/security/growthhackers/growthhackers-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Growthhackers Plans Pricing](https://apis.io/plans/growthhackers/growthhackers-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Growthhackers Rate Limits](https://apis.io/rate-limits/growthhackers/growthhackers-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://growthhackers.com/)
+- [Blog](https://growthhackers.com/news)
+- [Terms of service](https://growthhackers.com/terms-of-service/)
+- [Privacy policy](https://growthhackers.com/privacy-policy/)
+- [GitHub](https://github.com/growthhackers)
+
+## API Evangelist rating
+
+**Kin Score 12.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 34.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/growthhackers/](https://apis.io/providers/growthhackers/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for GrowthHackers: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/growthhackers/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
